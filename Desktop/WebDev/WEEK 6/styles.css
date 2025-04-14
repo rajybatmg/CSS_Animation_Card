@@ -1,0 +1,89 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #e8ebed; /* Soft light background */
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 40px;
+  color: #2d3436;
+}
+
+/* Card Layout - Vertical Stack */
+.card-container {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically */
+  align-items: center;
+  gap: 20px;
+}
+
+/* Base Card Styling  */
+.card {
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+  color: #2d3436;
+}
+
+/* For Animations */
+
+/* Fade In */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide In */
+.slide-in {
+  transform: translateX(-100%);
+  animation: slideIn 1.5s forwards;
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Bounce */
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Hover Scale */
+.scale-hover:hover {
+  transform: scale(1.05);
+}
+
+.icon {
+  height: 150px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
